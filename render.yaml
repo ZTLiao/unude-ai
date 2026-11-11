@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: unude-ai
+    runtime: python
+    plan: free
+    # 前端已本地构建并提交 dist，云端无需 Node
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.0
+      - key: SECRET_KEY
+        generateValue: true

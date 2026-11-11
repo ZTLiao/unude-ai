@@ -1,0 +1,1 @@
+import{_ as e,a as t,b as n,g as r,m as i}from"./index-BrRiWMOf.js";var a={class:`page`},o={__name:`Discover`,setup(o){return(o,s)=>(n(),r(`div`,a,[s[0]||=i(`h1`,{class:`page-title`},`DISCOVER`,-1),e(t)]))}};export{o as default};

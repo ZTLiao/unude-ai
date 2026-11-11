@@ -1,0 +1,109 @@
+/* 全局深紫暗色主题 (对齐 unudeai.com 视觉风格) */
+:root {
+  --bg: #0d0618;
+  --bg-card: #1a1128;
+  --bg-input: #241a38;
+  --primary: #8b5cf6;
+  --primary-soft: #a78bfa;
+  --text: #f3f0fa;
+  --text-dim: #9a8fb8;
+  --border: #2d2148;
+  --danger: #f87171;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #app { height: 100%; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 手机端最大宽度约束,桌面预览居中 */
+#app > .phone-frame {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+  background: var(--bg);
+  padding-bottom: 76px;
+}
+
+.page { padding: 20px 16px 30px; }
+
+.page-title {
+  font-size: 26px;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: var(--text);
+  margin-bottom: 18px;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 999px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-primary:disabled { opacity: 0.45; cursor: not-allowed; }
+
+input, textarea, select {
+  width: 100%;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  color: var(--text);
+  font-size: 14px;
+  outline: none;
+}
+input:focus, textarea:focus { border-color: var(--primary); }
+textarea { resize: vertical; min-height: 96px; }
+
+.chip {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.chip.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.empty {
+  text-align: center;
+  color: var(--text-dim);
+  padding: 60px 0;
+  font-size: 14px;
+}
+
+.error-msg {
+  background: rgba(248, 113, 113, 0.12);
+  color: var(--danger);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}

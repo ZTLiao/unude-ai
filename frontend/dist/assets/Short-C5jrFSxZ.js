@@ -1,0 +1,1 @@
+import{_ as e,a as t,b as n,c as r,g as i,m as a}from"./index-BrRiWMOf.js";var o={class:`page`},s=r({__name:`Short`,setup(r){return(r,s)=>(n(),i(`div`,o,[s[0]||=a(`h1`,{class:`page-title`},`SHORT`,-1),s[1]||=a(`p`,{class:`hint`},`AI 生成的视频作品`,-1),e(t,{"work-type":`video`})]))}},[[`__scopeId`,`data-v-474f0ba0`]]);export{s as default};
